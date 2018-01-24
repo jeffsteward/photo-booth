@@ -1,10 +1,10 @@
-* Photo Booth
+# Photo Booth
 
 June 2009
 
 The whole system is mostly cobbled together from spare parts. 
 
-*** Hardware
+### Hardware
 - old laptop with at least two USB ports; screen removed 
 - 17" LCD monitor with the stand removed
 - camera is an Olympus C-5060
@@ -16,25 +16,25 @@ The whole system is mostly cobbled together from spare parts.
 - 20' of PVC pipe
 - various PVC pipe fittings
 
-*** Software
+### Software
 - Windows 2000
 - Photobooth (custom VB.NET application; source at http://www.assembla.com/wiki/show/photobooth)
 - Cam2Com
 
 A very high level view of the system is this: A button is pressed which sends a command to the Photobooth software. The software interprets the command and sends another command to Cam2Com. Cam2Com triggers the camera. The camera takes a picture. Cam2Com downloads the photo from the camera to the computer. The Photobooth software detects the new photo then displays it on the screen.
 
-# button is pushed
-# serial command is received by the Photobooth software
-# screen is cleared
-# "Get Ready" message is displayed
-# Photobooth invokes Cam2Com
-# Cam2Com triggers the camera
-# camera takes the picture
-# Cam2Com downloads the image from the camera to a specified folder
-# Photobooth watches for a new image file to appear in the specified folder
-# Photobooth loads the image for display
-# Photobooth creates a cached thumbnail version
-# the system is put back in a ready state
+1. button is pushed
+2. serial command is received by the Photobooth software
+3. screen is cleared
+4. "Get Ready" message is displayed
+5. Photobooth invokes Cam2Com
+6. Cam2Com triggers the camera
+7. camera takes the picture
+8. Cam2Com downloads the image from the camera to a specified folder
+9. Photobooth watches for a new image file to appear in the specified folder
+10. Photobooth loads the image for display
+11. Photobooth creates a cached thumbnail version
+12. the system is put back in a ready state
 
 All of the source code for Photobooth and for the Arduino microcontroller is available here http://www.assembla.com/wiki/show/photobooth. The Cam2Com software I had to buy. The reason for that is because I'm using the older Olympus C-5060 camera which doesn't support newer computer-to-camera protocols. There is an alternate version of Photobooth (Photobooh_WIA) that does not require Cam2Com but it does require a camera that can operate in PTP mode and Windows XP or higher. I've used it quite successfully with a Nikon D40. The software the principles are the same as teh non-WIA version. The nice thing is that Photobooth_WIA is capable of triggering the camera and downloading the photos so you can cut out the Cam2Com layer.
 
