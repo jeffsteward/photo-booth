@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="WatchFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CameraControlEXE" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MessageDuration" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2.5</Value>
+    </Setting>
+    <Setting Name="COMPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM1</Value>
+    </Setting>
+    <Setting Name="WaitMessage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Prepare for automagic</Value>
+    </Setting>
+    <Setting Name="ImageCache" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MessageFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Arial Black, 18pt</Value>
+    </Setting>
+    <Setting Name="CameraDeviceID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ErrorMessage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The automagic failed. Try again.</Value>
+    </Setting>
+    <Setting Name="CounterMessage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{0} kinds of automagic</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
