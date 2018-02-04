@@ -19,40 +19,40 @@ Partial Class Options
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel
-        Me.OK_Button = New System.Windows.Forms.Button
-        Me.Cancel_Button = New System.Windows.Forms.Button
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog
-        Me.lblCaption = New System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Test = New System.Windows.Forms.Button
-        Me.TestMessage = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.txtMessageFont = New System.Windows.Forms.TextBox
-        Me.FontDialog1 = New System.Windows.Forms.FontDialog
-        Me.Button4 = New System.Windows.Forms.Button
-        Me.SelectCamera = New System.Windows.Forms.Button
-        Me.txtCamera = New System.Windows.Forms.TextBox
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.txtCounterMessage = New System.Windows.Forms.TextBox
-        Me.txtErrorMessage = New System.Windows.Forms.TextBox
-        Me.txtImageCachePath = New System.Windows.Forms.TextBox
-        Me.txtWaitMessage = New System.Windows.Forms.TextBox
-        Me.COMPorts = New System.Windows.Forms.ComboBox
-        Me.MessageDuration = New System.Windows.Forms.NumericUpDown
-        Me.txtWatchPath = New System.Windows.Forms.TextBox
-        Me.txtCamControlPath = New System.Windows.Forms.TextBox
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.OK_Button = New System.Windows.Forms.Button()
+        Me.Cancel_Button = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.lblCaption = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Test = New System.Windows.Forms.Button()
+        Me.TestMessage = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtMessageFont = New System.Windows.Forms.TextBox()
+        Me.FontDialog1 = New System.Windows.Forms.FontDialog()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.SelectCamera = New System.Windows.Forms.Button()
+        Me.txtCamera = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtCounterMessage = New System.Windows.Forms.TextBox()
+        Me.txtErrorMessage = New System.Windows.Forms.TextBox()
+        Me.txtImageCachePath = New System.Windows.Forms.TextBox()
+        Me.txtWaitMessage = New System.Windows.Forms.TextBox()
+        Me.COMPorts = New System.Windows.Forms.ComboBox()
+        Me.MessageDuration = New System.Windows.Forms.NumericUpDown()
+        Me.txtWatchPath = New System.Windows.Forms.TextBox()
+        Me.txtCamControlPath = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.MessageDuration, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
