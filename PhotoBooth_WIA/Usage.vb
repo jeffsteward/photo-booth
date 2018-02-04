@@ -20,8 +20,8 @@ Public Class Usage
         Dim formGraphics As System.Drawing.Graphics
 
         formGraphics = Me.CreateGraphics()
-        formGraphics.DrawRectangle(myPen, _
-                            BORDER_MARGIN, BORDER_MARGIN, _
+        formGraphics.DrawRectangle(myPen,
+                            BORDER_MARGIN, BORDER_MARGIN,
                             Me.Width - BORDER_MARGIN * 2, Me.Height - BORDER_MARGIN * 2)
 
         myPen.Dispose()

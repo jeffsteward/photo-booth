@@ -19,23 +19,25 @@ Partial Class Usage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel
-        Me.Label15 = New System.Windows.Forms.Label
-        Me.Label12 = New System.Windows.Forms.Label
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.Label16 = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,7 +55,7 @@ Partial Class Usage
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(3, 50)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(258, 14)
+        Me.Label2.Size = New System.Drawing.Size(257, 14)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Toggle full screen and windowed mode:"
         '
@@ -80,14 +82,16 @@ Partial Class Usage
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.32669!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.67331!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Label15, 1, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label12, 1, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label18, 1, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label17, 0, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label15, 1, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label12, 1, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.Label11, 1, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 7)
         Me.TableLayoutPanel1.Controls.Add(Me.Label10, 1, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Label9, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
@@ -95,29 +99,40 @@ Partial Class Usage
         Me.TableLayoutPanel1.Controls.Add(Me.Label8, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Label6, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label7, 0, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label13, 1, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label14, 0, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label7, 0, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label13, 1, 7)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label14, 0, 6)
         Me.TableLayoutPanel1.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TableLayoutPanel1.ForeColor = System.Drawing.Color.White
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(34, 72)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(25)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 7
+        Me.TableLayoutPanel1.RowCount = 8
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(447, 193)
         Me.TableLayoutPanel1.TabIndex = 5
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(3, 100)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(185, 14)
+        Me.Label17.TabIndex = 7
+        Me.Label17.Text = "Show presentation window:"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(308, 125)
+        Me.Label15.Location = New System.Drawing.Point(308, 145)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(16, 14)
         Me.Label15.TabIndex = 13
@@ -126,7 +141,7 @@ Partial Class Usage
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(308, 100)
+        Me.Label12.Location = New System.Drawing.Point(308, 120)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(14, 14)
         Me.Label12.TabIndex = 10
@@ -144,7 +159,7 @@ Partial Class Usage
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(3, 150)
+        Me.Label4.Location = New System.Drawing.Point(3, 170)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(35, 14)
         Me.Label4.TabIndex = 3
@@ -189,16 +204,16 @@ Partial Class Usage
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(3, 100)
+        Me.Label7.Location = New System.Drawing.Point(3, 120)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(95, 14)
+        Me.Label7.Size = New System.Drawing.Size(94, 14)
         Me.Label7.TabIndex = 5
         Me.Label7.Text = "Take a photo:"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(308, 150)
+        Me.Label13.Location = New System.Drawing.Point(308, 170)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(28, 14)
         Me.Label13.TabIndex = 11
@@ -207,7 +222,7 @@ Partial Class Usage
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(3, 125)
+        Me.Label14.Location = New System.Drawing.Point(3, 145)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(113, 14)
         Me.Label14.TabIndex = 12
@@ -224,6 +239,15 @@ Partial Class Usage
         Me.Label16.Size = New System.Drawing.Size(226, 14)
         Me.Label16.TabIndex = 6
         Me.Label16.Text = "Press any key to close this menu..."
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(308, 100)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(15, 14)
+        Me.Label18.TabIndex = 10
+        Me.Label18.Text = "P"
         '
         'Usage
         '
@@ -262,4 +286,6 @@ Partial Class Usage
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
 End Class

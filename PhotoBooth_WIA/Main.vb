@@ -35,6 +35,8 @@ Public Class Main
             Case Keys.O
                 Options.ShowDialog()
                 LoadSettings()
+            Case Keys.P
+                TogglePresentationWindow()
             Case Keys.R
                 input.Write("R")
             Case Keys.G
@@ -95,7 +97,7 @@ Public Class Main
         Dim fileCounter As Collections.ObjectModel.ReadOnlyCollection(Of String)
 
         'Inspect the cache folder
-        fileCounter = My.Computer.FileSystem.GetFiles( _
+        fileCounter = My.Computer.FileSystem.GetFiles(
                         My.Settings.ImageCache, FileIO.SearchOption.SearchTopLevelOnly, "*.jpg")
         If fileCounter.Count <> 0 Then
             For Each file As String In fileCounter
@@ -104,10 +106,10 @@ Public Class Main
         End If
 
         'Inspect the photos folder
-        fileCounter = My.Computer.FileSystem.GetFiles( _
+        fileCounter = My.Computer.FileSystem.GetFiles(
                         My.Settings.WatchFolder, FileIO.SearchOption.SearchTopLevelOnly, "*.jpg")
         If fileCounter.Count <> 0 Then
-            If MessageBox.Show("There are files in the photos folder. Do you want to empty the folder now?", _
+            If MessageBox.Show("There are files in the photos folder. Do you want to empty the folder now?",
                                 "Clear photo folders", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 For Each file As String In fileCounter
                     My.Computer.FileSystem.DeleteFile(file)
@@ -116,8 +118,8 @@ Public Class Main
         End If
 
         'Initialize the preview window
-        'previewWindow = New Presentation
-        'previewWindow.Show()
+        previewWindow = New Presentation
+        previewWindow.Show()
 
         'Find the selected camera
         dm = New DeviceManager
@@ -172,21 +174,28 @@ Public Class Main
         logWindow.Visible = Not logWindow.Visible
     End Sub
 
+    Private Sub TogglePresentationWindow()
+        If previewWindow Is Nothing Then
+            previewWindow = New Presentation
+        End If
+        previewWindow.Visible = Not previewWindow.Visible
+    End Sub
+
     Private Sub ToggleWindowMode()
         If Me.WindowState <> FormWindowState.Maximized Then
             Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
             Me.WindowState = FormWindowState.Maximized
 
-            'previewWindow.FormBorderStyle = Windows.Forms.FormBorderStyle.None
-            'previewWindow.WindowState = FormWindowState.Maximized
+            previewWindow.FormBorderStyle = Windows.Forms.FormBorderStyle.None
+            previewWindow.WindowState = FormWindowState.Maximized
 
             'Windows.Forms.Cursor.Hide()
         Else
             Me.FormBorderStyle = Windows.Forms.FormBorderStyle.FixedSingle
             Me.WindowState = FormWindowState.Normal
 
-            'previewWindow.FormBorderStyle = Windows.Forms.FormBorderStyle.FixedSingle
-            'previewWindow.WindowState = FormWindowState.Normal
+            previewWindow.FormBorderStyle = Windows.Forms.FormBorderStyle.FixedSingle
+            previewWindow.WindowState = FormWindowState.Normal
 
             'Windows.Forms.Cursor.Show()
         End If
@@ -240,6 +249,8 @@ Public Class Main
             'Show the new image on the presentation panel
             FiveBottomPanel1.ShowImage(img, photos(photos.Count).ToString)
             FiveBottomPanel1.Visible = True
+
+            previewWindow.ShowImage(img, photos(photos.Count).ToString)
 
         Catch ex As Exception
             'log the message
